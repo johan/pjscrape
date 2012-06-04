@@ -28,11 +28,11 @@ function arrify(a) {
     return isArray(a) ? a : a ? [a] : [];
 }
 
-_pjs_getScript('https://github.com/nrabinowitz/pjscrape/raw/master/client/jquery.js', function() {
+_pjs_getScript('https://github.com/johan/pjscrape/raw/johan/client/jquery.js', function() {
     window._pjs$ = jQuery.noConflict(true);
     // nesting ensures proper load order
-    _pjs_getScript('https://github.com/nrabinowitz/pjscrape/raw/master/client/pjscrape_client.js', function() {
-    
+    _pjs_getScript('https://github.com/johan/pjscrape/raw/johan/client/dev_harness.js', function() {
+
         var suiteConfig = {};
         
         window.pjs = {
